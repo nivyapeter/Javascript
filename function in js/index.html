@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>ha</h1>
+  <script>
+    //function
+
+
+function myFunc(){
+  let a=6;
+  myFuncOne();
+  return a;
+}
+function myFuncOne(){
+   console.log("completed");
+}
+function myFuncTwo(){
+  let a=9;
+  myFuncOne();
+  return a;
+}
+console.log(myFunc());
+console.log(myFuncTwo());
+
+
+//passing parameter
+function newFunc(x,y,z){
+  let a=x;
+  let b=y;
+  let c=z;
+  let d=a+b+c;
+  return d;
+}
+console.log(newFunc(10,20,30));
+
+
+newFunc = (a) => {
+   return(a)
+}
+console.log(newFunc(10));
+  </script>
+</body>
+</html>
