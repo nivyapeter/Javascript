@@ -9,7 +9,7 @@ while (isSunk == false) {
     if (guess < 0 || guess > 6) {
     alert("Please enter a valid cell number!");
     } else {
-        guesses = guesses + 1
+        // guesses = guesses + 1
         if (guesss == location1 || guess == location2 || guess == location3) {
             hits = hits + 1;
             if (hits == 3) {
