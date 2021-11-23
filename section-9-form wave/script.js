@@ -9,3 +9,4 @@ labels.forEach(label => {
 			">${letter}</span>`)
 		.join('');
 });
+console.log("helllo")
