@@ -8,6 +8,6 @@ function whatShallWear(temp) {
         console.log("wear t-shirt");
     }
 }
-var temp=whatShallWear(80);
- var temp =whatShallWear(50);
-var tempm= whatShallWear(65);
+whatShallWear(80);
+ whatShallWear(50);
+ whatShallWear(65);
