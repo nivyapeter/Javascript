@@ -18,4 +18,5 @@ async function generateJoke() {
 
   jokeEl.innerHTML = data.joke
 }
+console.log("hai")
 
