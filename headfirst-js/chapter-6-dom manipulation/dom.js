@@ -5,7 +5,15 @@
 
 // adding content to dom
 
-let planet = document.getElementById("greenplanet");
-console.log(planet);
-planet.innerHTML="welcome";
-console.log(planet.innerHTML);
+// let planet = document.getElementById("greenplanet");
+// console.log(planet);
+// planet.innerHTML="welcome";
+// console.log(planet.innerHTML);
+
+function init() {
+    let planet = document.getElementById('greenplanet');
+    planet.innerHTML = "welcome";
+    console.log(planet.innerHTML);
+    planet.setAttribute("class","blueplanet");
+}
+window.onload=init;
