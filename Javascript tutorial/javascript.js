@@ -75,6 +75,37 @@
 
 
 
+// const globalplayer = [
+//     {
+//     id:0,
+//     name:"anju",
+//     play: "football",
+// },
+// {
+//     id:0,
+//     name:"anju",
+//     play: "football",
+// },
+// {
+//     id:0,
+//     name:"anju",
+//     play: "football",
+// },
+// ]
+
+
+// for(let i=0;i<globalplayer.length;i++) {
+//     console.log(globalplayer[i].play)
+// }
+
+// globalplayer.forEach((value,index,array) => {
+//       console.log(array);
+// });
+
+
+// ########map and filter########
+
+
 const globalplayer = [
     {
     id:0,
@@ -84,16 +115,19 @@ const globalplayer = [
 {
     id:0,
     name:"anju",
-    play: "football",
+    play: "cricket",
 },
 {
     id:0,
     name:"anju",
     play: "football",
 },
-]
+];
 
 
-for(let i=0;i<globalplayer.length;i++) {
-    console.log(globalplayer[i].play)
-}
+
+// const newArray = globalplayer.map((value) => value.play);
+// console.log(newArray);
+
+const newArray = globalplayer.filter((value) => value.play === football);
+console.log(newArray);
