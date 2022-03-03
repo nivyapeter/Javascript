@@ -106,6 +106,33 @@
 // ########map and filter########
 
 
+// const globalplayer = [
+//     {
+//     id:0,
+//     name:"anju",
+//     play: "football",
+// },
+// {
+//     id:0,
+//     name:"anju",
+//     play: "cricket",
+// },
+// {
+//     id:0,
+//     name:"anju",
+//     play: "football",
+// },
+// ];
+
+
+
+// const newArray = globalplayer.map((value) => value.play);
+// console.log(newArray);
+
+// const newArray = globalplayer.filter((value) => value.play === football);
+// console.log(newArray);
+
+// ################# find
 const globalplayer = [
     {
     id:0,
@@ -116,18 +143,19 @@ const globalplayer = [
     id:0,
     name:"anju",
     play: "cricket",
+    company: {
+        com_name:"google"
+    }
 },
 {
-    id:0,
+    id:1,
     name:"anju",
     play: "football",
 },
 ];
+// const newObj = globalplayer.find((value) => value.play === cricket &&  value.id === 1);
+// console.log(newObj);
 
-
-
-// const newArray = globalplayer.map((value) => value.play);
-// console.log(newArray);
-
-const newArray = globalplayer.filter((value) => value.play === football);
-console.log(newArray);
+if(globalplayer && globalplayer.company && globalplayer.company.com_name) {
+    console.log(globalplayer.company.com_name);
+}
