@@ -133,29 +133,42 @@
 // console.log(newArray);
 
 // ################# find
-const globalplayer = [
-    {
-    id:0,
-    name:"anju",
-    play: "football",
-},
-{
-    id:0,
-    name:"anju",
-    play: "cricket",
-    company: {
-        com_name:"google"
-    }
-},
-{
-    id:1,
-    name:"anju",
-    play: "football",
-},
-];
-// const newObj = globalplayer.find((value) => value.play === cricket &&  value.id === 1);
-// console.log(newObj);
+// const globalplayer = [
+//     {
+//     id:0,
+//     name:"anju",
+//     play: "football",
+// },
+// {
+//     id:0,
+//     name:"anju",
+//     play: "cricket",
+//     company: {
+//         com_name:"google"
+//     }
+// },
+// {
+//     id:1,
+//     name:"anju",
+//     play: "football",
+// },
+// ];
+// // const newObj = globalplayer.find((value) => value.play === cricket &&  value.id === 1);
+// // console.log(newObj);
 
-if(globalplayer && globalplayer.company && globalplayer.company.com_name) {
-    console.log(globalplayer.company.com_name);
-}
+// if(globalplayer && globalplayer.company && globalplayer.company.com_name) {
+//     console.log(globalplayer.company.com_name);
+// }
+
+
+
+// #########chaining
+
+// const numArray = [12,33,45,66,77,88,99,2,6,44];
+
+// const nextArray = numArray.map((value) => value).filter((data) => data > 20).sort((a,b) =>a-b).reduce((total,value) =>total + value,0);
+// console.log(nextArray);
+
+// document.getElementById("header").style.color="red";
+const header = document.querySelectorAll("#header");
+header.forEach((data) => (data.style.color="red"));
