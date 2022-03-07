@@ -31,6 +31,28 @@
     const display = () => {
         console.log("hai njan")
     }
+
+
+
+    // this keyword #####
+   const obj = {
+       a:1,
+       b:2,
+       c:function (){
+           console.log(this);
+       }
+   };
+//    obj.c = obj.c.bind(obj.c)
+//    obj.c();
+// const yourObj = {
+//     k:1,
+//     h:2,
+// };
+   
+var aa = obj.c;
+   aa();
+    aa.call(obj)
+// caal is used to set the context at the time of calling and bind used at the time of writing function
     </script>
 </body>
 </html>
