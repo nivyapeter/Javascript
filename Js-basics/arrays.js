@@ -145,3 +145,55 @@ console.log('some',hasInexpensiveItems);
 
 const haveInexpensiveItems = items.every((item) => item.price <=100 );
 console.log('every',haveInexpensiveItems);
+
+
+
+// #########################
+
+
+// array constructor
+
+const fruits  = new Array('a','b','c');
+fruits[fruits.length] = 'd';
+x = fruits;
+
+
+const arr = [1,2,3,4,5,6,7,8]
+// x = arr.slice(1,4);
+
+// x = arr.splice(3,1);
+
+x = arr.slice(1,4);
+
+console.log(x,arr);
+
+const fruitss = ['apple','pear','orange'];
+const berries = ['a','b','c','d'];
+
+const allFruits = [fruitss,berries];
+x = fruitss.concat(berries);
+
+x= [...fruitss,...berries];
+
+// flatten arrays 
+
+const arry = [1,2,3,[4,5],6,7,[8,9,10]];
+
+x = arry.flat();
+x = Array.from('1234');
+
+const ar = [1,2,3,4,5];
+
+x = ar.push(6);
+x = ar.reverse();
+
+const ar1 = [1,2,3,4,5];
+const ar2 = [5,6,7,8,9];
+
+const ar3 =  [...ar1,...ar2]
+
+ ar3.splice(4,1);
+
+console.log(ar3);
+
+

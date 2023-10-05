@@ -30,4 +30,5 @@ x = s.charAt(0).toUpperCase() + s.substring(1);
 x = s[0].toUpperCase() + s.substring(1);
 x = `${s[0].toUpperCase()}${s.substring(1)} `
 
+// x = s.slice(6);
 console.log(x);
