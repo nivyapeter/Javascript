@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>Simple DOM example</title>
+  </head>
+  <header>
+
+  </header>
+  <section>
+
+  </section>
+  <body>
+    <script>
+      let superHeroesList = {};
+      const populate = async () => {
+        const requestUrl =
+          "https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json";
+
+        const response = await fetch(requestUrl);
+        // const superHeroes = await response.json();
+
+        const superHerosText = await response.text();
+
+        const superHeroes = JSON.parse( superHerosText);
+        console.log({superHeroes,superHerosText});
+
+        superHeroesList = superHeroes;
+
+        const header = document.querySelector("header");
+
+        const myH1 = document.createElement("h1");
+        myH1.textContent = superHeroesList.squadName;
+        header.appendChild(myH1);
+
+        const myPara = document.createElement("p");
+        myPara.textContent = `HomeTown: ${superHeroesList.homeTown}`;
+        header.appendChild(myPara);
+      };
+    </script>
+    <div class="button" onclick="populate()">
+        Get data
+    </div>
+  </body>
+</html>

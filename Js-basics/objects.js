@@ -63,3 +63,4 @@ const numbers = [12,13,14,15,16];
 const [first,second,...rest] = numbers;
 
 console.log(first,second,rest);
+
